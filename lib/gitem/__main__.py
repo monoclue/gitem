@@ -12,9 +12,9 @@ import collections
 import functools
 import multiprocessing
 
-from . import api
-from . import analytics
-from . import output
+from lib.gitem import api
+from lib.gitem import analytics
+from lib.gitem import output
 
 CONCISE_COUNT = 5
 
@@ -204,7 +204,7 @@ def parse_args():
         '-o',
         '--oauth2-token',
         action='store',
-        help='OAuth2 token for authentcation'
+        help='OAuth2 token for authentication'
     )
     p.add_argument(
         '-v',
